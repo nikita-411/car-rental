@@ -1,0 +1,368 @@
+{
+	"info": {
+		"_postman_id": "fe169d60-32fe-4870-b179-3f63e6191601",
+		"name": "car_rental",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/addcar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"v_number\":\"abd-123\",\n\t\"model\":\"abd\",\n\t\"rent_per_day\":\"2000\",\n\t\"city\":\"abd\",\n\t\"seats\":\"4\",\n\t\"booking_status\":\"false\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/addcar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"addcar"
+					]
+				},
+				"description": "add new car"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/addcar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"v_number\":\"abd-456\",\n\t\"model\":\"abd\",\n\t\"rent_per_day\":\"2000\",\n\t\"city\":\"abd\",\n\t\"seats\":\"4\",\n\t\"booking_status\":\"false\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/addcar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"addcar"
+					]
+				},
+				"description": "add new car 2"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/addcar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"v_number\":\"abd-678\",\n\t\"model\":\"a6d\",\n\t\"rent_per_day\":\"2000\",\n\t\"city\":\"abd\",\n\t\"seats\":\"4\",\n\t\"booking_status\":\"false\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/addcar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"addcar"
+					]
+				},
+				"description": "add new car 3"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/update/5da5dbd84492ae7f5009cad5",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"v_number\":\"abd-777\",\n\t\"model\":\"aaa\",\n\t\"rent_per_day\":\"2000\",\n\t\"city\":\"abd\",\n\t\"seats\":\"4\",\n\t\"booking_status\":\"false\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/update/5da5dbd84492ae7f5009cad5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"update",
+						"5da5dbd84492ae7f5009cad5"
+					]
+				},
+				"description": "update car details"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/delete/5da5dc344492ae7f5009cad6",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/delete/5da5dc344492ae7f5009cad6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"delete",
+						"5da5dc344492ae7f5009cad6"
+					]
+				},
+				"description": "delete car"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/delete/5da5dc344492ae7f5009cad6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"model\":\"aaa\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/searchingModel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"searchingModel"
+					]
+				},
+				"description": "search by model name"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/delete/5da5dc344492ae7f5009cad6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/carDetails/5da5dbd84492ae7f5009cad5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"carDetails",
+						"5da5dbd84492ae7f5009cad5"
+					]
+				},
+				"description": "specific car details using id"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/adduser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"aryan\",\n\t\"password\":\"aryan\",\n\t\"isAdmin\":\"true\",\n\t\"v_number\":\"\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/adduser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"adduser"
+					]
+				},
+				"description": "add user 1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/adduser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\":\"wp\",\n\t\"password\":\"wp\",\n\t\"isAdmin\":\"true\",\n\t\"v_number\":\"\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/adduser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"adduser"
+					]
+				},
+				"description": "add user 2"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/searchingModel",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"model\":\"aaa\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/searchingModel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"searchingModel"
+					]
+				},
+				"description": "SEARCH by model"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/takeCar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"v_number\": \"5da5dcdf4492ae7f5009cad7\",\n    \"username\": \"aryan\",\n    \"issue_date\":\"5\",\n    \"return_date\":\"6\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/takeCar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"takeCar"
+					]
+				},
+				"description": "book car"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
